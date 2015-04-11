@@ -2,16 +2,15 @@
 \label{chapter:dewe_v1}
 
 \section{Introduction}
-\label{sec:dewe_v1_intro}
+\label{sec:dewe_v1:dewe_v1_intro}
 
-In recent years, the concept of workflow has gained increasing level of acceptance by the scientific computing community. Large-scale scientific computations usually involve a large number of different tasks, often in the number of hundreds or thousands. Some of these tasks depend on the output of other tasks (i.e., precedence constraints), forming a workflow (see an example in Figure \ref{fig:montage}). When the precedence requirements for certain tasks have been met, each of these tasks can then run independently in its own environment. In practice, scientific workflows are usually run on clusters with multiple computing nodes. A workflow management system is needed to control the sequence of task execution, computing resource assignment, as well as data transfer to satisfy the precedence constraints. 
+In recent years, the concept of workflow has gained increasing level of acceptance by the scientific computing community. Large-scale scientific computations usually involve a large number of different tasks, often in the number of hundreds or thousands. Some of these tasks depend on the output of other tasks (i.e., precedence constraints), forming a workflow. When the precedence requirements for certain tasks have been met, each of these tasks can then run independently in its own environment. In practice, scientific workflows are usually run on clusters with multiple computing nodes. A workflow management system is needed to control the sequence of task execution, computing resource assignment, as well as data transfer to satisfy the precedence constraints. 
 
-Examples of scientific workflows are Montage \cite{montage, web:montage}, LIGO \cite{ligo}, and CyberShake \cite{cybershake}. Examples of workflow management systems are Pegasus \cite{pegasus} and Kepler \cite{kepler}.
+Examples of scientific workflows are Montage \cite{montage, web:montage}, LIGO \cite{ligo}, and CyberShake \cite{cybershake}. Examples of workflow management systems are Pegasus \cite{deelman2004pegasus} and Kepler \cite{altintas2004kepler}.
 
 For many scientific workflow applications, the task modules are often developed as sequential code. One reason is that these modules were developed in early years when the concept of parallel programming had not been widely adopted by researchers in specific problem domains. Even today the development of parallel code is pretty complex for non experts in parallel programming. The other reason is that workflow management systems usually use CPU slots (e.g., cores, or virtual CPU cores or vCPUs) as basic resource allocation units, and it is easier to carry out workflow scheduling with a one-to-one mapping between CPU slots and tasks. Due to the precedence constraints between tasks, only certain tasks are eligible to run at a given point in time. When the number of concurrently running tasks is smaller than the number of CPU slots available in the computing cluster, the extra CPU slots will be idling. In the extreme case, only one task is running on one CPU slot in a large computing cluster, resulting in significant under-utilization of computing resources.
 
-A workflow can be represented by a directed acyclic graph (DAG, see Figure \ref{fig:montage}), where the vertices represent the tasks and the edges represent the precedence constraints. The DAG scheduling problem is NP-complete in general. In recent years, there emerged a large volume of literature on workflow scheduling, with the goal to decrease the time needed by the workflow (\cite{Topcuouglu:2002:PLT:566137.566142, Tanaka:2012:WSM:2310096.2310129}) or minimize the size/cost of the computing cluster (\cite{MaoSC2011, %Malawski2012, 
-Leslie13}). Other attempts to optimize workflow execution include using alternative data storage and data staging options for improved I/O efficiency, e.g., \cite{pushpull, Juve2010, leeccgrid2013, leeiccs2014}. However, none of the existing methods addresses the resource under-utilization problem caused by sequential code, especially when certain sequential code becomes the bottleneck of a workflow. 
+A workflow can be represented by a directed acyclic graph (DAG), where the vertices represent the tasks and the edges represent the precedence constraints. The DAG scheduling problem is NP-complete in general. In recent years, there emerged a large volume of literature on workflow scheduling, with the goal to decrease the time needed by the workflow or minimize the size/cost of the computing cluster. Other attempts to optimize workflow execution include using alternative data storage and data staging options for improved I/O efficiency. However, none of the existing methods addresses the resource under-utilization problem caused by sequential code, especially when certain sequential code becomes the bottleneck of a workflow. 
 
 In this chapter, we present a set of methods to optimize the execution of scientific workflows, with the Montage astronomical mosaic engine running on Amazon EC2 as an example. We use our own DEWE (Distributed Elastic Workflow Execution)\footnote{DEWE including its source code and visualization toolkit used in this study is available from \url{https://bitbucket.org/lleslie/dwf/wiki/Home}.} as a workflow management system. The main contributions of the present work are:
 
@@ -22,7 +21,7 @@ In this chapter, we present a set of methods to optimize the execution of scient
 	\item We compare the impact of different computing cluster configurations on Amazon EC2 on the performance of the Montage workflow, and analyze the root cause for the performance difference. 
 \end{itemize}
 
-The rest of this chapter is organized as follows. Section \ref{v1_sec:visualization} describes the design of the workflow visualization toolkit and its usage. In Section \ref{sec:parallel}, we first discuss the impact of compiler optimization on performance and then use code level parallelization to mitigate the bottleneck. In Section \ref{sec:eval}, we evaluate our optimization approach by comparing different cluster configurations on Amazon EC2. Section \ref{sec:relatedwork} discusses related work. We draw our conclusions in Section \ref{sec:conclusion}.
+The rest of this chapter is organized as follows. Section \ref{v1_sec:visualization} describes the design of the workflow visualization toolkit and its usage. In Section \ref{v1_sec:parallel}, we first discuss the impact of compiler optimization on performance and then use code level parallelization to mitigate the bottleneck. In Section \ref{v1_sec:eval}, we evaluate our optimization approach by comparing different cluster configurations on Amazon EC2. We summarize our conclusions in Section \ref{v1_sec:summary}.
 
 \section{Workflow Visualization}
 \label{v1_sec:visualization}
@@ -62,7 +61,7 @@ The detailed visualization and  resource consumption patterns of a 6.0 degree Mo
 
 
 \section{Parallelization}
-\label{sec:parallel}
+\label{v1_sec:parallel}
 
 In this section, we study the impact of parallelization techniques on the performance of Montage. We apply standard compiler optimizations and then exploit parallelism with the support of the Parallware technology\footnote{Parallware is the new source-to-source parallelizing compiler developed by the Appentra team  (http://www.appentra.com/products/parallware/).}. 
 
@@ -84,7 +83,7 @@ The Montage workflow uses the GNU C Compiler (GCC) as the default compiler with 
 Figure \ref{fig:compiler} shows the performance difference between GCC and ICC, with different compiler optimization flags. In general, ICC achieves better performance in that the makespans of the ICC test runs are 24\% shorter than the makespans of the GCC test runs. When compiler optimization flags are used, both GCC and ICC achieve additional 7\% performance gain as compared with the default version, while the difference between different compilation flags is very small.
 
 \subsection{The Parallelization of Bottleneck Task}
-\label{sec:parallware}
+\label{v1_sec:parallware}
 
 As mBgModel is identified as the bottleneck of Montage in Section \ref{sec:visualization}, we present a cost-effective OpenMP-enabled parallelization strategy of mBgModel. For this purpose we use the technology of Parallware. The resulting OpenMP-enabled parallel mBgModel provides good performance gains at the cost of short development times. 
 
@@ -160,7 +159,7 @@ In the mBgModel code finer-grained parallelism is exploited as follows. The loop
 
 
 \section{Evaluation}
-\label{sec:eval}
+\label{v1_sec:eval}
 
 In this section, we first evaluate our parallelization technique and present variations of performance across different cluster configurations on Amazon EC2.
 

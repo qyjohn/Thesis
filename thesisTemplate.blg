@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesisTemplate.aux
+The style file: style/mybibstyle.bst
+Database file #1: references.bib
+Repeated entry---line 499 of file references.bib
+ : @inproceedings{juve2009scientific
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 508 of file references.bib
+ : @inproceedings{juve2010data
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 517 of file references.bib
+ : @article{juve2012evaluation
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 528 of file references.bib
+ : @inproceedings{deelman2008cost
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 537 of file references.bib
+ : @inproceedings{ramakrishnan2009vgrads
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 546 of file references.bib
+ : @inproceedings{juhnke2009fault
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 556 of file references.bib
+ : @inproceedings{dornemann2009demand
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 565 of file references.bib
+ : @inproceedings{ostermann2010dynamic
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 575 of file references.bib
+ : @inproceedings{nagavaram2011cloud
+ :                                  ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "pegasus"
+Warning--I didn't find a database entry for "kepler"
+Warning--I didn't find a database entry for "Topcuouglu:2002:PLT:566137.566142"
+Warning--I didn't find a database entry for "Tanaka:2012:WSM:2310096.2310129"
+Warning--I didn't find a database entry for "MaoSC2011"
+Warning--I didn't find a database entry for "Leslie13"
+Warning--I didn't find a database entry for "pushpull"
+Warning--I didn't find a database entry for "Juve2010"
+Warning--I didn't find a database entry for "leeccgrid2013"
+Warning--I didn't find a database entry for "leeiccs2014"
+Warning--to sort, need author or key in web:montage
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in hollingsworth1995workflow
+Warning--missing publisher in moosefs
+You've used 34 entries,
+            3070 wiz_defined-function locations,
+            855 strings with 12887 characters,
+and the built_in function-call counts, 25999 in all, are:
+= -- 2017
+> -- 1397
+< -- 26
++ -- 523
+- -- 477
+* -- 1996
+:= -- 3947
+add.period$ -- 154
+call.type$ -- 34
+change.case$ -- 365
+chr.to.int$ -- 34
+cite$ -- 39
+duplicate$ -- 1728
+empty$ -- 1902
+format.name$ -- 582
+if$ -- 5258
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 367
+newline$ -- 175
+num.names$ -- 132
+pop$ -- 732
+preamble$ -- 1
+purify$ -- 292
+quote$ -- 0
+skip$ -- 761
+stack$ -- 0
+substring$ -- 1110
+swap$ -- 991
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 303
+warning$ -- 3
+while$ -- 173
+width$ -- 0
+write$ -- 459
+(There were 9 error messages)

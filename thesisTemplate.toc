@@ -1,0 +1,42 @@
+\contentsline {chapter}{\tocchapter {Chapter}{}{Student Plagiarism: Compliance Statement}}{ii}{chapter*.2}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Abstract}}{iii}{chapter*.4}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Acknowledgements}}{iv}{chapter*.6}
+\contentsline {chapter}{\tocchapter {Chapter}{}{List of Figures}}{vii}{chapter*.6}
+\contentsline {chapter}{\tocchapter {Chapter}{}{List of Tables}}{ix}{chapter*.6}
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Introduction}}{1}{chapter.1}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Literature Review}}{4}{chapter.2}
+\contentsline {section}{\tocsection {}{2.1}{Introduction to Scientific Workflow}}{4}{section.2.1}
+\contentsline {section}{\tocsection {}{2.2}{Workflow Execution Frameworks}}{7}{section.2.2}
+\contentsline {section}{\tocsection {}{2.3}{Workflow Execution in the Cloud}}{11}{section.2.3}
+\contentsline {section}{\tocsection {}{2.4}{Research Directions}}{14}{section.2.4}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Optimizing the Execution of Large Scale Scientific Workflows in Public Clouds}}{16}{chapter.3}
+\contentsline {section}{\tocsection {}{3.1}{Introduction}}{16}{section.3.1}
+\contentsline {section}{\tocsection {}{3.2}{Workflow Visualization}}{18}{section.3.2}
+\contentsline {section}{\tocsection {}{3.3}{Parallelization}}{20}{section.3.3}
+\contentsline {subsection}{\tocsubsection {}{3.3.1}{Compiler Optimization}}{20}{subsection.3.3.1}
+\contentsline {subsection}{\tocsubsection {}{3.3.2}{The Parallelization of Bottleneck Task}}{21}{subsection.3.3.2}
+\contentsline {section}{\tocsection {}{3.4}{Evaluation}}{22}{section.3.4}
+\contentsline {section}{\tocsection {}{3.5}{Summary}}{24}{section.3.5}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Executing Large Scale Workflow Ensembles in Public Clouds}}{28}{chapter.4}
+\contentsline {section}{\tocsection {}{4.1}{Introduction}}{28}{section.4.1}
+\contentsline {section}{\tocsection {}{4.2}{Design and Implementation of DEWE v2}}{32}{section.4.2}
+\contentsline {subsection}{\tocsubsection {}{4.2.1}{Design Philosophy}}{32}{subsection.4.2.1}
+\contentsline {subsection}{\tocsubsection {}{4.2.2}{System Architecture}}{33}{subsection.4.2.2}
+\contentsline {subsection}{\tocsubsection {}{4.2.3}{Implementation of the Master Daemon}}{35}{subsection.4.2.3}
+\contentsline {subsection}{\tocsubsection {}{4.2.4}{Implementation of the Worker Daemon}}{36}{subsection.4.2.4}
+\contentsline {subsection}{\tocsubsection {}{4.2.5}{Implementation of the Workflow Submission Application}}{36}{subsection.4.2.5}
+\contentsline {section}{\tocsection {}{4.3}{Experiment Environment}}{37}{section.4.3}
+\contentsline {subsection}{\tocsubsection {}{4.3.1}{Selection of EC2 Instances}}{37}{subsection.4.3.1}
+\contentsline {subsection}{\tocsubsection {}{4.3.2}{Benchmark of EC2 Instances}}{38}{subsection.4.3.2}
+\contentsline {section}{\tocsection {}{4.4}{Performance Evaluation of DEWE v2}}{41}{section.4.4}
+\contentsline {subsection}{\tocsubsection {}{4.4.1}{Scheduling vs Pulling}}{41}{subsection.4.4.1}
+\contentsline {subsection}{\tocsubsection {}{4.4.2}{Workflow Submission Intervals}}{42}{subsection.4.4.2}
+\contentsline {subsection}{\tocsubsection {}{4.4.3}{System Robustness}}{43}{subsection.4.4.3}
+\contentsline {section}{\tocsection {}{4.5}{Resource Provisioning Strategy}}{44}{section.4.5}
+\contentsline {subsection}{\tocsubsection {}{4.5.1}{Profiling}}{45}{subsection.4.5.1}
+\contentsline {subsection}{\tocsubsection {}{4.5.2}{Determining Cluster Size}}{48}{subsection.4.5.2}
+\contentsline {subsection}{\tocsubsection {}{4.5.3}{Large Scale Experiments}}{49}{subsection.4.5.3}
+\contentsline {section}{\tocsection {}{4.6}{Disk IO Capacity}}{52}{section.4.6}
+\contentsline {section}{\tocsection {}{4.7}{Summary}}{53}{section.4.7}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Conclusion}}{55}{chapter.5}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Bibliography}}{56}{chapter*.37}

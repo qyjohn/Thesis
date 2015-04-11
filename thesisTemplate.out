@@ -1,0 +1,42 @@
+\BOOKMARK [0][-]{chapter*.2}{Student Plagiarism: Compliance Statement}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.6}{Acknowledgements}{}% 3
+\BOOKMARK [0][-]{chapter*.6}{List of Figures}{}% 4
+\BOOKMARK [0][-]{chapter*.6}{List of Tables}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Chapter 1. Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{Chapter 2. Literature Review}{}% 7
+\BOOKMARK [1][-]{section.2.1}{2.1. Introduction to Scientific Workflow}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{2.2. Workflow Execution Frameworks}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{2.3. Workflow Execution in the Cloud}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{2.4. Research Directions}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Chapter 3. Optimizing the Execution of Large Scale Scientific Workflows in Public Clouds}{}% 12
+\BOOKMARK [1][-]{section.3.1}{3.1. Introduction}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{3.2. Workflow Visualization}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{3.3. Parallelization}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1. Compiler Optimization}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2. The Parallelization of Bottleneck Task}{section.3.3}% 17
+\BOOKMARK [1][-]{section.3.4}{3.4. Evaluation}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{3.5. Summary}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Chapter 4. Executing Large Scale Workflow Ensembles in Public Clouds}{}% 20
+\BOOKMARK [1][-]{section.4.1}{4.1. Introduction}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{4.2. Design and Implementation of DEWE v2}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1. Design Philosophy}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2. System Architecture}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3. Implementation of the Master Daemon}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4. Implementation of the Worker Daemon}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5. Implementation of the Workflow Submission Application}{section.4.2}% 27
+\BOOKMARK [1][-]{section.4.3}{4.3. Experiment Environment}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1. Selection of EC2 Instances}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2. Benchmark of EC2 Instances}{section.4.3}% 30
+\BOOKMARK [1][-]{section.4.4}{4.4. Performance Evaluation of DEWE v2}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1. Scheduling vs Pulling}{section.4.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2. Workflow Submission Intervals}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3. System Robustness}{section.4.4}% 34
+\BOOKMARK [1][-]{section.4.5}{4.5. Resource Provisioning Strategy}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1. Profiling}{section.4.5}% 36
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2. Determining Cluster Size}{section.4.5}% 37
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3. Large Scale Experiments}{section.4.5}% 38
+\BOOKMARK [1][-]{section.4.6}{4.6. Disk IO Capacity}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.7}{4.7. Summary}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Chapter 5. Conclusion}{}% 41
+\BOOKMARK [0][-]{chapter*.37}{Bibliography}{}% 42

@@ -1,7 +1,255 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\href}[2]{#2}
+
+\bibitem[{web(2013)}]{web:montage}
+ 2013.
+\newblock Montage: An astronomical image mosaic engine.
+\newblock \url{http://montage.ipac.caltech.edu/}.
+
+\bibitem[{Abramovici and W.~E.~Althouse(1992)}]{ligo}
+A.~Abramovici and et.~al. W.~E.~Althouse. 1992.
+\newblock Ligo: The laser interferometer gravitational-wave observatory.
+\newblock \emph{Science}, 256(5055):325--333.
+
+\bibitem[{Abrishami et~al.(2012)Abrishami, Naghibzadeh, and
+  Epema}]{abrishami2012cost}
+Saeid Abrishami, Mahmoud Naghibzadeh, and Dick~HJ Epema. 2012.
+\newblock Cost-driven scheduling of grid workflows using partial critical
+  paths.
+\newblock \emph{Parallel and Distributed Systems, IEEE Transactions on},
+  23(8):1400--1414.
+
+\bibitem[{Altintas et~al.(2004)Altintas, Berkley, Jaeger, Jones, Ludascher, and
+  Mock}]{altintas2004kepler}
+Ilkay Altintas, Chad Berkley, Efrat Jaeger, Matthew Jones, Bertram Ludascher,
+  and Steve Mock. 2004.
+\newblock Kepler: an extensible system for design and execution of scientific
+  workflows.
+\newblock In \emph{Scientific and Statistical Database Management, 2004.
+  Proceedings. 16th International Conference on}, pages 423--424. IEEE.
+
+\bibitem[{Barga et~al.(2008)Barga, Jackson, Araujo, Guo, Gautam, and
+  Simmhan}]{barga2008trident}
+Roger Barga, Jared Jackson, Nelson Araujo, Dean Guo, Nitin Gautam, and Yogesh
+  Simmhan. 2008.
+\newblock The trident scientific workflow workbench.
+\newblock In \emph{eScience, 2008. eScience'08. IEEE Fourth International
+  Conference on}, pages 317--318. IEEE.
+
+\bibitem[{Bharathi et~al.(2008)Bharathi, Chervenak, Deelman, Mehta, Su, and
+  Vahi}]{bharathi2008characterization}
+Shishir Bharathi, Ann Chervenak, Ewa Deelman, Gaurang Mehta, Mei-Hui Su, and
+  Karan Vahi. 2008.
+\newblock Characterization of scientific workflows.
+\newblock In \emph{Workflows in Support of Large-Scale Science, 2008. WORKS
+  2008. Third Workshop on}, pages 1--10. IEEE.
+
+\bibitem[{Borrill et~al.(2009)Borrill, Oliker, Shalf, Shan, and
+  Uselton}]{borrill2009hpc}
+Julian Borrill, Leonid Oliker, John Shalf, Hongzhang Shan, and Andrew Uselton.
+  2009.
+\newblock Hpc global file system performance analysis using a
+  scientific-application derived benchmark.
+\newblock \emph{Parallel Computing}, 35(6):358--373.
+
+\bibitem[{Couvares et~al.(2007)Couvares, Kosar, Roy, Weber, and
+  Wenger}]{couvares2007workflow}
+Peter Couvares, Tevfik Kosar, Alain Roy, Jeff Weber, and Kent Wenger. 2007.
+\newblock Workflow management in condor.
+\newblock In \emph{Workflows for e-Science}, pages 357--375. Springer.
+
+\bibitem[{Deelman et~al.(2004)Deelman, Blythe, Gil, Kesselman, Mehta, Patil,
+  Su, Vahi, and Livny}]{deelman2004pegasus}
+Ewa Deelman, James Blythe, Yolanda Gil, Carl Kesselman, Gaurang Mehta, Sonal
+  Patil, Mei-Hui Su, Karan Vahi, and Miron Livny. 2004.
+\newblock Pegasus: Mapping scientific workflows onto the grid.
+\newblock In \emph{Grid Computing}, pages 11--20. Springer.
+
+\bibitem[{Deelman et~al.(2013)Deelman, Juve, Malawski, and
+  Nabrzyski}]{deelman2013hosted}
+Ewa Deelman, Gideon Juve, Maciej Malawski, and Jarek Nabrzyski. 2013.
+\newblock Hosted science: Managing computational workflows in the cloud.
+\newblock \emph{Parallel Processing Letters}, 23(02).
+
+\bibitem[{Deelman et~al.(2008)Deelman, Singh, Livny, Berriman, and
+  Good}]{deelman2008cost}
+Ewa Deelman, Gurmeet Singh, Miron Livny, Bruce Berriman, and John Good. 2008.
+\newblock The cost of doing science on the cloud: the montage example.
+\newblock In \emph{Proceedings of the 2008 ACM/IEEE conference on
+  Supercomputing}, page~50. IEEE Press.
+
+\bibitem[{Dornemann et~al.(2009)Dornemann, Juhnke, and
+  Freisleben}]{dornemann2009demand}
+Tim Dornemann, Ernst Juhnke, and Bernd Freisleben. 2009.
+\newblock On-demand resource provisioning for bpel workflows using amazon's
+  elastic compute cloud.
+\newblock In \emph{Cluster Computing and the Grid, 2009. CCGRID'09. 9th
+  IEEE/ACM International Symposium on}, pages 140--147. IEEE.
+
+\bibitem[{Graves and T.~H.~Jordan(2010)}]{cybershake}
+R.~Graves and et.~al. T.~H.~Jordan. 2010.
+\newblock Cybershake: A physics-based seismic hazard model for {Southern
+  California}.
+\newblock \emph{Pure and Applied Geophysics}, 168(3-4):367--381.
+
+\bibitem[{Hollingsworth(1995)}]{hollingsworth1995workflow}
+David Hollingsworth. 1995.
+\newblock The workflow reference model.
+
+\bibitem[{Jacob and Katz(2009)}]{montage}
+Joseph~C. Jacob and Daniel S. et~al. Katz. 2009.
+\newblock Montage: a grid portal and software toolkit for science-grade
+  astronomical image mosaicking.
+\newblock \emph{Int'l J. Computational Science and Engineering}, 4(2):73--87.
+
+\bibitem[{Juhnke et~al.(2009)Juhnke, Dornemann, and
+  Freisleben}]{juhnke2009fault}
+Ernst Juhnke, Tim Dornemann, and Bernd Freisleben. 2009.
+\newblock Fault-tolerant bpel workflow execution via cloud-aware recovery
+  policies.
+\newblock In \emph{Software Engineering and Advanced Applications, 2009.
+  SEAA'09. 35th Euromicro Conference on}, pages 31--38. IEEE.
+
+\bibitem[{Juve et~al.(2012)Juve, Deelman, Berriman, Berman, and
+  Maechling}]{juve2012evaluation}
+Gideon Juve, Ewa Deelman, G~Bruce Berriman, Benjamin~P Berman, and Philip
+  Maechling. 2012.
+\newblock An evaluation of the cost and performance of scientific workflows on
+  amazon ec2.
+\newblock \emph{Journal of Grid Computing}, 10(1):5--21.
+
+\bibitem[{Juve et~al.(2009)Juve, Deelman, Vahi, Mehta, Berriman, Berman, and
+  Maechling}]{juve2009scientific}
+Gideon Juve, Ewa Deelman, Karan Vahi, Gaurang Mehta, Bruce Berriman, Benjamin~P
+  Berman, and Phil Maechling. 2009.
+\newblock Scientific workflow applications on amazon ec2.
+\newblock In \emph{E-Science Workshops, 2009 5th IEEE International Conference
+  on}, pages 59--66. IEEE.
+
+\bibitem[{Juve et~al.(2010)Juve, Deelman, Vahi, Mehta, Berriman, Berman, and
+  Maechling}]{juve2010data}
+Gideon Juve, Ewa Deelman, Karan Vahi, Gaurang Mehta, Bruce Berriman, Benjamin~P
+  Berman, and Phil Maechling. 2010.
+\newblock Data sharing options for scientific workflows on amazon ec2.
+\newblock In \emph{Proceedings of the 2010 ACM/IEEE International Conference
+  for High Performance Computing, Networking, Storage and Analysis}, pages
+  1--9. IEEE Computer Society.
+
+\bibitem[{Kwok and Ahmad(1996)}]{kwok1996dynamic}
+Yu-Kwong Kwok and Ishfaq Ahmad. 1996.
+\newblock Dynamic critical-path scheduling: An effective technique for
+  allocating task graphs to multiprocessors.
+\newblock \emph{Parallel and Distributed Systems, IEEE Transactions on},
+  7(5):506--521.
+
+\bibitem[{Lee and Zomaya(2013)}]{lee2013stretch}
+Young~Choon Lee and Albert~Y Zomaya. 2013.
+\newblock Stretch out and compact: Workflow scheduling with resource abundance.
+\newblock In \emph{Cluster, Cloud and Grid Computing (CCGrid), 2013 13th
+  IEEE/ACM International Symposium on}, pages 219--226. IEEE.
+
+\bibitem[{Leslie et~al.(2015)Leslie, Sato, Lee, Jiang, and Zomaya}]{dewev1}
+Luke~M. Leslie, Chiaki Sato, Young~Choon Lee, Qingye Jiang, and Albert~Y.
+  Zomaya. 2015.
+\newblock Dewe: A framework for distributed elastic scientific workflow
+  execution.
+\newblock In \emph{Proceedings of 13th Australasian Symposium on Parallel and
+  Distributed Computing (AusPDC 2015)}. Australia Computer Society.
+
+\bibitem[{Litzkow et~al.(1988)Litzkow, Livny, and Mutka}]{litzkow1988condor}
+Michael~J Litzkow, Miron Livny, and Matt~W Mutka. 1988.
+\newblock Condor-a hunter of idle workstations.
+\newblock In \emph{Distributed Computing Systems, 1988., 8th International
+  Conference on}, pages 104--111. IEEE.
+
+\bibitem[{Livny et~al.(2008)Livny, Teonadi, Livny, and Waldor}]{livny2008high}
+Jonathan Livny, Hidayat Teonadi, Miron Livny, and Matthew~K Waldor. 2008.
+\newblock High-throughput, kingdom-wide prediction and annotation of bacterial
+  non-coding rnas.
+\newblock \emph{PloS one}, 3(9):e3197.
+
+\bibitem[{Marru et~al.(2011)Marru, Gunathilake, Herath, Tangchaisin, Pierce,
+  Mattmann, Singh, Gunarathne, Chinthaka, Gardler et~al.}]{marru2011apache}
+Suresh Marru, Lahiru Gunathilake, Chathura Herath, Patanachai Tangchaisin,
+  Marlon Pierce, Chris Mattmann, Raminder Singh, Thilina Gunarathne, Eran
+  Chinthaka, Ross Gardler, et~al. 2011.
+\newblock Apache airavata: a framework for distributed applications and
+  computational workflows.
+\newblock In \emph{Proceedings of the 2011 ACM workshop on Gateway computing
+  environments}, pages 21--28. ACM.
+
+\bibitem[{Medina-Mora et~al.(1992)Medina-Mora, Winograd, Flores, and
+  Flores}]{medina1992action}
+Raul Medina-Mora, Terry Winograd, Rodrigo Flores, and Fernando Flores. 1992.
+\newblock The action workflow approach to workflow management technology.
+\newblock In \emph{Proceedings of the 1992 ACM conference on Computer-supported
+  cooperative work}, pages 281--288. ACM.
+
+\bibitem[{{MooseFS Core Technology Development and Support
+  Team}(2014)}]{moosefs}
+{MooseFS Core Technology Development and Support Team}. 2014.
+\newblock \emph{MooseFS 2.0 User's Manual}.
+
+\bibitem[{Nagavaram et~al.(2011)Nagavaram, Agrawal, Freitas, Telu, Mehta,
+  Mayani, and Deelman}]{nagavaram2011cloud}
+Ashish Nagavaram, Gagan Agrawal, Michael~A Freitas, Kelly~H Telu, Gaurang
+  Mehta, Rajiv~G Mayani, and Ewa Deelman. 2011.
+\newblock A cloud-based dynamic workflow for mass spectrometry data analysis.
+\newblock In \emph{E-Science (e-Science), 2011 IEEE 7th International
+  Conference on}, pages 47--54. IEEE.
+
+\bibitem[{Oinn et~al.(2004)Oinn, Addis, Ferris, Marvin, Senger, Greenwood,
+  Carver, Glover, Pocock, Wipat et~al.}]{oinn2004taverna}
+Tom Oinn, Matthew Addis, Justin Ferris, Darren Marvin, Martin Senger, Mark
+  Greenwood, Tim Carver, Kevin Glover, Matthew~R Pocock, Anil Wipat, et~al.
+  2004.
+\newblock Taverna: a tool for the composition and enactment of bioinformatics
+  workflows.
+\newblock \emph{Bioinformatics}, 20(17):3045--3054.
+
+\bibitem[{Ostermann et~al.(2010)Ostermann, Prodan, and
+  Fahringer}]{ostermann2010dynamic}
+Simon Ostermann, Radu Prodan, and Thomas Fahringer. 2010.
+\newblock Dynamic cloud provisioning for scientific grid workflows.
+\newblock In \emph{Grid Computing (GRID), 2010 11th IEEE/ACM International
+  Conference on}, pages 97--104. IEEE.
+
+\bibitem[{Ramakrishnan et~al.(2009)Ramakrishnan, Koelbel, Kee, Wolski, Nurmi,
+  Gannon, Obertelli, YarKhan, Mandal, Huang et~al.}]{ramakrishnan2009vgrads}
+Lavanya Ramakrishnan, Charles Koelbel, Yang-Suk Kee, Richard Wolski, Daniel
+  Nurmi, Dennis Gannon, Graziano Obertelli, Asim YarKhan, Anirban Mandal,
+  T~Mark Huang, et~al. 2009.
+\newblock Vgrads: enabling e-science workflows on grids and clouds with fault
+  tolerance.
+\newblock In \emph{High Performance Computing Networking, Storage and Analysis,
+  Proceedings of the Conference on}, pages 1--12. IEEE.
+
+\bibitem[{Shams et~al.(2010)Shams, Powell, Crockett, Norris, Rossi, and
+  Soderstrom}]{shams2010polyphony}
+Khawaja~S Shams, Mark~W Powell, Tom~M Crockett, Jeffrey~S Norris, Ryan Rossi,
+  and Tom Soderstrom. 2010.
+\newblock Polyphony: A workflow orchestration framework for cloud computing.
+\newblock In \emph{Cluster, Cloud and Grid Computing (CCGrid), 2010 10th
+  IEEE/ACM International Conference on}, pages 606--611. IEEE.
+
+\bibitem[{Simmhan et~al.(2009)Simmhan, Barga, van Ingen, Lazowska, and
+  Szalay}]{simmhan2009building}
+Yogesh Simmhan, Roger Barga, Catharine van Ingen, Ed~Lazowska, and Alex Szalay.
+  2009.
+\newblock Building the trident scientific workflow workbench for data
+  management in the cloud.
+\newblock In \emph{Advanced Engineering Computing and Applications in Sciences,
+  2009. ADVCOMP'09. Third International Conference on}, pages 41--50. IEEE.
+
+\bibitem[{Topcuoglu et~al.(2002)Topcuoglu, Hariri, and
+  Wu}]{topcuoglu2002performance}
+Haluk Topcuoglu, Salim Hariri, and Min-you Wu. 2002.
+\newblock Performance-effective and low-complexity task scheduling for
+  heterogeneous computing.
+\newblock \emph{Parallel and Distributed Systems, IEEE Transactions on},
+  13(3):260--274.
 
 \end{thebibliography}
