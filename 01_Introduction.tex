@@ -1,0 +1,36 @@
+\chapter{Introduction}
+\label{chapter:introduction}
+
+Scientists in different fields, such as high energy physics, earth science, and astronomy are developing large-scale workflow applications. In many use cases, scientists need to run a set of interrelated but independent workflows (i.e., \emph{workflow ensembles}) for the entire scientific analysis. As a workflow ensemble usually contains many sub-workflows in each of which hundreds or thousands of jobs exist with precedence constraints, the execution of such a workflow ensemble makes a great concern for researchers with both cost and deadline constrains.
+
+In the past, resource scarcity was a great challenge for the scientific computing community. Most researchers depend on grid computing to obtain access to large scale computing resource. In recent years, public clouds are gradually making their way into the scientific computing community and  gaining increasing level of adoption. Despite the significant difference between the grid environment and the public cloud environment, many researchers in the scientific workflow community continue to use methodologies and tools developed for grid computing in public clouds. This results in significant resource under utilization as well as over spending. In this research, we develop a set of methods to optimize the execution of large scale scientific workflows in public clouds with both cost and deadline constrains. We accomplish this goal through the following two-step approach: 
+
+In the first step, we present a set of methods to optimize the execution of scientific workflow in public clouds, with the Montage astronomical mosaic engine running on Amazon EC2 as an example. In this study, we use DEWE (Distributed Elastic Workflow Execution)\footnote{DEWE including its source code and visualization toolkit used in this study is available from \url{https://bitbucket.org/lleslie/dwf/wiki/Home}.} - a light weight workflow execution framework developed at the University of Sydney - to carry out our experiments. The main contributions of the step are:
+
+\begin{itemize}
+	\item We develop a workflow visualization toolkit to visualize the workflow execution process and resource consumption pattern. We use the workflow visualization toolkit to process the trace files produced by the workflow management system to identify the bottleneck of the Montage workflow.
+	\item We use parallelization techniques to optimize the mBgModel module in the Montage workflow, resulting in significant degree of performance gains.
+	\item We compare the impact of different computing cluster configurations on Amazon EC2 on the performance of the Montage workflow, and analyze the root cause for the performance difference. 
+\end{itemize}
+
+
+In the second step, we address three main challenges in realizing benefits of using public clouds when executing large-scale workflow ensembles: (1) execution coordination, (2) resource provisioning, and (3) data staging. To this end, we develop DEWE v2\footnote{The source code is available from \url{https://github.com/qyjohn/DEWE.v2}. Although DEWE v2 has been completely rewritten, it shares some fundamental design concepts with DEWE v1; hence the name. In subsequent sections, we call the original version DEWE v1.} as a pulling-based workflow execution system that is capable of executing large scale scientific workflow ensembles in public clouds. The specific contributions of this step are:
+
+
+\begin{itemize}
+  \item We demonstrate that the pulling approach has better performance over the scheduling approach in executing large scale scientific workflow ensembles in public clouds. 
+  \item We propose a two-step strategy to provision computing resources in public clouds for executing large scale scientific workflow ensembles to meet both cost and deadline constraints. 
+
+\item We compare the disk I/O performance of Amazon EC2 and modern HPC systems to determine the feasibility of using public clouds to execute large scale disk I/O intensive scientific workflow ensembles.  
+\end{itemize}
+
+
+We have extensive evaluated DEWE v2 using Montage (an astronomical image mosaic engine, an open-source scientific workflow) workflow ensembles with varying sizes of workflow ensembles and different configurations of EC2 clusters. In particularly, our large-scale experiments were conducted using up to 200 6.0 degree Montage workflows containing over 1.7M jobs and dealing with approximately 7 TB of data; and, four Amazon EC2 clusters with different instance types (\emph{c3.8xlarge, r3.8xlarge and i2.8xlarge}\footnote{Note that they are the largest instances in their instance families.}) were set up consisting of up to 1,280 vCPUs. 
+
+Our evaluation has been carried out in comparison with Pegasus since DEWE v1 is only capable of running a single workflow at a time. As compared to Pegasus, DEWE v2 can achieve 80\% speed-up when running multiple scientific workflows in parallel with the same cluster configuration. The proposed resource provisioning strategy has been incorporated into DEWE v2; and, it clearly demonstrates its capability to identify the most appropriate number of resources to be rented considering both cost and deadline constraints. Furthermore, the disk I/O performance of Amazon EC2 clusters is comparable to that in modern HPC systems.
+
+The rest of this thesis is organized as follows. In Chapter \ref{chapter:literature}, we present a comprehensive literature review on recent advancements in scientific workflow research. In Chapter \ref{chapter:dewe_v1}, we discuss methodologies and strategics to optimize the execution of a single scientific workflow in public clouds, using a 6.0 degree Montage workflow as a case study. In Chapter \ref{chapter:dewe_v2}, we discuss methodologies and strategics to optimize the execution of large scale scientific workflow ensembles in public clouds with both cost and deadline constrains, using a large scale experiment with up to 200 6.0 degree Montage workflows as an example. Our conclusions are presented in Chapter \ref{chapter:conclusion}.
+
+
+
+

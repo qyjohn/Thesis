@@ -1,0 +1,8 @@
+\chapter*{Abstract}
+
+Scientists in different fields, such as high energy physics, earth science, and astronomy are developing large-scale workflow applications. In many use cases, scientists need to run a set of interrelated but independent workflows (i.e., \emph{workflow ensembles}) for the entire scientific analysis. 
+As a workflow ensemble usually contains many sub-workflows in each of which hundreds or thousands of jobs exist with precedence constraints, the execution of such a workflow ensemble makes a great concern with cost even using elastic and pay-as-you-go cloud resources.
+
+In this research, we develop a set of methods to optimize the execution of large scale scientific workflows in public clouds with both cost and deadline constrains with a two-step approach. Firstly, we present a set of methods to optimize the execution of scientific workflow in public clouds, with the Montage astronomical mosaic engine running on Amazon EC2 as an example. Secondly, we address three main challenges in realizing benefits of using public clouds when executing large-scale workflow ensembles: (1) execution coordination, (2) resource provisioning, and (3) data staging. To this end, we develop a new pulling-based workflow execution system with a profiling-based resource provisioning strategy. Our results show that our solution system can achieve 80\% speed-up, by removing scheduling overhead, compared to the well-known Pegasus workflow management system when running scientific workflow ensembles. Besides, our evaluation using Montage workflow ensembles on around 1000-core Amazon EC2 clusters has demonstrated the efficacy of our resource provisioning strategy in terms of cost effectiveness within deadline. 
+
+
