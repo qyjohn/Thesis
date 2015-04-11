@@ -5,56 +5,57 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Example of a DAG representation of workflow\relax }}{6}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Design of Workflow Visualization Toolkit\relax }}{18}{figure.caption.8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Detailed visualization of a 6.0 degree Montage workflow running Amazon EC2. The computing cluster includes 4 m3.2xlarge instances.\relax }}{19}{figure.caption.9}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Resource consumption pattern of a 6.0 degree Montage workflow running Amazon EC2. The computing cluster includes 4 m3.2xlarge instances.\relax }}{19}{figure.caption.10}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Compiler Optimization Results\relax }}{20}{figure.caption.11}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Pseudocode of the sequential code of the task mBgModel.\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Impact of Parallelization on Workflow Performance\relax }}{26}{figure.caption.13}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Impact of Cluster Configuration - Makespan\relax }}{26}{figure.caption.14}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Impact of Cluster Configuration - mBgModel\relax }}{26}{figure.caption.15}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Impact of RAID 0 on Makespan\relax }}{26}{figure.caption.16}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Combination of Optimization Techniques\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The structure of the Montage workflow.\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Design of Workflow Visualization Toolkit\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Detailed visualization of a 6.0 degree Montage workflow running Amazon EC2. The computing cluster includes 4 m3.2xlarge instances.\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Resource consumption pattern of a 6.0 degree Montage workflow running Amazon EC2. The computing cluster includes 4 m3.2xlarge instances.\relax }}{20}{figure.caption.11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Compiler Optimization Results\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Pseudocode of the sequential code of the task mBgModel.\relax }}{27}{figure.caption.13}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Impact of Parallelization on Workflow Performance\relax }}{28}{figure.caption.14}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Impact of Cluster Configuration - Makespan\relax }}{28}{figure.caption.15}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Impact of Cluster Configuration - mBgModel\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Impact of RAID 0 on Makespan\relax }}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Combination of Optimization Techniques\relax }}{29}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The structure of the Montage workflow.\relax }}{29}{figure.caption.19}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Detailed visualization of a 6.0 degree Montage workflow running 4 m3.2xlarge instaces using DEWE v1. Each worker node has 8 vCPU, 30 GB of memory, and 2 x 80 GB SSD storage. The horizontal axis represents time in seconds, while the vertical axis represents vCPU slots in the cluster. Each vCPU is represented by two horizontal bars, with job execution activities on the first horizontal bar and data staging activities on the second horizontal bar. For each worker node, the graph shows the IP address of the worker node, the time spent on job execution (compute time) and the time spent on data staging (communication time) for each vCPU slot. As shown in the graph, the Montage has a clear three-stage pattern, with significant resource utilization in the second and third stage.\relax }}{29}{figure.caption.20}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The architecture of DEWE v2.\relax }}{33}{figure.caption.21}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Benchmark of CPU, memory and disk IO for c3.8xlarge, r3.8xlarge and i2.8xlarge instances.\relax }}{38}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Benchmark}}}{38}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Memory Benchmark}}}{38}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk IO Benchmark}}}{38}{subfigure.4.3}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Resource consumption patterns of one 6.0 degree Montage workflow running on a single-node cluster with DEWE v2 and Pegasus. The instance type being used is c3.8xlarge.\relax }}{40}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Concurrent Threads}}}{40}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CPU Utilization}}}{40}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Write Operations}}}{40}{subfigure.5.3}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Resource consumption of multiple 6.0 degree Montage Workflow running on a single-node cluster with Pegasus and DEWE v2. The instance type being used is c3.8xlarge.\relax }}{40}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Total Execution Time}}}{40}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total CPU Time}}}{40}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Total Disk Writes}}}{40}{subfigure.6.3}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Execution time of five 6.0 degree Montage Workflow running on a single-node cluster with DEWE v2. The instance type being used is c3.8xlarge.\relax }}{42}{figure.caption.27}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Resource consumption patterns of five 6.0 degree Montage workflows running on a single node cluster with DEWE v2. The workflow submission intervals are 0, 50 and 100 seconds.\relax }}{44}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{44}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{44}{subfigure.8.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{44}{subfigure.8.3}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Resource consumption patterns of ten 6.0 degree Montage workflows running on a single node cluster with DEWE v2. The instance type being used are c3.8xlarge, r3.8xlarge and i2.8xlarge.\relax }}{45}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{45}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{45}{subfigure.9.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{45}{subfigure.9.3}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Resource consumption patterns of 20 6.0 degree Montage workflows running on a 2-node cluster with DEWE v2. The instance type being used is r3.8xlarge. The shared file system is NFS.\relax }}{46}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{46}{subfigure.10.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{46}{subfigure.10.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{46}{subfigure.10.3}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The impact of workload and cluster size on the performance of the cluster. On the single-node clusters, we run up to 10 6.0 degree Montage workflows. On the multi-node clusters, we run 20 6.0 degree Montage workflows in one batch.\relax }}{47}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single-Node Cluster}}}{47}{subfigure.11.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multi-Node Cluster}}}{47}{subfigure.11.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Performance Degradation}}}{47}{subfigure.11.3}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Resource consumption patterns of 200 6.0 degree Montage workflows running on a 25-node cluster with DEWE v2. The instance type being used is r3.8xlarge.\relax }}{49}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{49}{subfigure.12.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{49}{subfigure.12.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{49}{subfigure.12.3}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Summary of the large scale experiments.\relax }}{50}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Execution Time}}}{50}{subfigure.13.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Performance Index}}}{50}{subfigure.13.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Price per Workflow}}}{50}{subfigure.13.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The structure of the Montage workflow.\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Detailed visualization of a 6.0 degree Montage workflow running 4 m3.2xlarge instaces using DEWE v1. Each worker node has 8 vCPU, 30 GB of memory, and 2 x 80 GB SSD storage. The horizontal axis represents time in seconds, while the vertical axis represents vCPU slots in the cluster. Each vCPU is represented by two horizontal bars, with job execution activities on the first horizontal bar and data staging activities on the second horizontal bar. For each worker node, the graph shows the IP address of the worker node, the time spent on job execution (compute time) and the time spent on data staging (communication time) for each vCPU slot. As shown in the graph, the Montage has a clear three-stage pattern, with significant resource utilization in the second and third stage.\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The architecture of DEWE v2.\relax }}{35}{figure.caption.22}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Benchmark of CPU, memory and disk IO for c3.8xlarge, r3.8xlarge and i2.8xlarge instances.\relax }}{40}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Benchmark}}}{40}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Memory Benchmark}}}{40}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk IO Benchmark}}}{40}{subfigure.4.3}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Resource consumption patterns of one 6.0 degree Montage workflow running on a single-node cluster with DEWE v2 and Pegasus. The instance type being used is c3.8xlarge.\relax }}{42}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Concurrent Threads}}}{42}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CPU Utilization}}}{42}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Write Operations}}}{42}{subfigure.5.3}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resource consumption of multiple 6.0 degree Montage Workflow running on a single-node cluster with Pegasus and DEWE v2. The instance type being used is c3.8xlarge.\relax }}{42}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Total Execution Time}}}{42}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total CPU Time}}}{42}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Total Disk Writes}}}{42}{subfigure.6.3}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Execution time of five 6.0 degree Montage Workflow running on a single-node cluster with DEWE v2. The instance type being used is c3.8xlarge.\relax }}{44}{figure.caption.28}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Resource consumption patterns of five 6.0 degree Montage workflows running on a single node cluster with DEWE v2. The workflow submission intervals are 0, 50 and 100 seconds.\relax }}{46}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{46}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{46}{subfigure.8.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{46}{subfigure.8.3}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Resource consumption patterns of ten 6.0 degree Montage workflows running on a single node cluster with DEWE v2. The instance type being used are c3.8xlarge, r3.8xlarge and i2.8xlarge.\relax }}{47}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{47}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{47}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{47}{subfigure.9.3}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Resource consumption patterns of 20 6.0 degree Montage workflows running on a 2-node cluster with DEWE v2. The instance type being used is r3.8xlarge. The shared file system is NFS.\relax }}{48}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{48}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{48}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{48}{subfigure.10.3}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The impact of workload and cluster size on the performance of the cluster. On the single-node clusters, we run up to 10 6.0 degree Montage workflows. On the multi-node clusters, we run 20 6.0 degree Montage workflows in one batch.\relax }}{49}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single-Node Cluster}}}{49}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multi-Node Cluster}}}{49}{subfigure.11.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Performance Degradation}}}{49}{subfigure.11.3}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Resource consumption patterns of 200 6.0 degree Montage workflows running on a 25-node cluster with DEWE v2. The instance type being used is r3.8xlarge.\relax }}{51}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {CPU Utilization}}}{51}{subfigure.12.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Disk Write Operations}}}{51}{subfigure.12.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Disk Read Operations}}}{51}{subfigure.12.3}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Summary of the large scale experiments.\relax }}{52}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Execution Time}}}{52}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Performance Index}}}{52}{subfigure.13.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Price per Workflow}}}{52}{subfigure.13.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

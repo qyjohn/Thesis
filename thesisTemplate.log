@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  11 APR 2015 20:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  11 APR 2015 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1087,7 +1087,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 88.
 
-<style/usyd-primary-colour.pdf, id=173, 293.095pt x 101.37875pt>
+<style/usyd-primary-colour.pdf, id=177, 293.095pt x 101.37875pt>
 File: style/usyd-primary-colour.pdf Graphic file (type pdf)
 
 <use style/usyd-primary-colour.pdf>
@@ -1175,7 +1175,7 @@ Underfull \vbox (badness 4120) has occurred while \output is active []
 
 
 ]
-<dag_example.pdf, id=398, 227.85126pt x 227.85126pt>
+<dag_example.pdf, id=405, 227.85126pt x 227.85126pt>
 File: dag_example.pdf Graphic file (type pdf)
  <use dag_example.pdf>
 Package pdftex.def Info: dag_example.pdf used on input line 17.
@@ -1212,95 +1212,121 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<toolkit.pdf, id=569, 453.695pt x 404.51125pt>
+<montage.pdf, id=576, 1335.99126pt x 857.2025pt>
+File: montage.pdf Graphic file (type pdf)
+ <use montage.pdf>
+Package pdftex.def Info: montage.pdf used on input line 33.
+(pdftex.def)             Requested size: 275.97969pt x 199.16672pt.
+ [17]
+Underfull \vbox (badness 1762) has occurred while \output is active []
+
+ [18 <./montage.pdf>] <toolkit.pdf, id=601, 453.695pt x 404.51125pt>
 File: toolkit.pdf Graphic file (type pdf)
  <use toolkit.pdf>
-Package pdftex.def Info: toolkit.pdf used on input line 31.
+Package pdftex.def Info: toolkit.pdf used on input line 52.
 (pdftex.def)             Requested size: 227.62204pt x 202.94643pt.
- [17]
-<visual.pdf, id=578, 2098.84125pt x 863.225pt>
+
+<visual.pdf, id=603, 2098.84125pt x 863.225pt>
 File: visual.pdf Graphic file (type pdf)
  <use visual.pdf>
-Package pdftex.def Info: visual.pdf used on input line 42.
+Package pdftex.def Info: visual.pdf used on input line 63.
 (pdftex.def)             Requested size: 455.24408pt x 187.23622pt.
 
-<pattern.pdf, id=579, 2098.84125pt x 722.7pt>
+<pattern.pdf, id=604, 2098.84125pt x 722.7pt>
 File: pattern.pdf Graphic file (type pdf)
  <use pattern.pdf>
-Package pdftex.def Info: pattern.pdf used on input line 49.
+Package pdftex.def Info: pattern.pdf used on input line 70.
 (pdftex.def)             Requested size: 455.24408pt x 156.7559pt.
- [18 <./toolkit.pdf>] [19 <./visual.pdf> <./pattern.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
+
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [19 <./toolkit.pdf>]
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [20 <./visual.pdf> <./pattern.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 [][]\T1/ptm/m/n/9 Parallware is the new source-to-source par-al-leliz-ing com-p
 iler de-vel-oped by the Ap-pen-tra team
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
-<fig01.pdf, id=708, 361.35pt x 216.81pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 94.
+
+<fig01.pdf, id=739, 361.35pt x 216.81pt>
 File: fig01.pdf Graphic file (type pdf)
  <use fig01.pdf>
-Package pdftex.def Info: fig01.pdf used on input line 75.
+Package pdftex.def Info: fig01.pdf used on input line 100.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
- [20 <./fig01.pdf>]
 
-LaTeX Warning: Reference `sec:visualization' on page 21 undefined on input line
- 88.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 99.
+LaTeX Warning: Reference `sec:visualization' on page 22 undefined on input line
+ 113.
+
+[22 <./fig01.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 124.
+
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-LaTeX Warning: Float too large for page by 85.09995pt on input line 152.
+LaTeX Warning: Float too large for page by 85.09995pt on input line 177.
 
 
-Overfull \hbox (36.17293pt too wide) in paragraph at lines 158--159
+Overfull \hbox (36.17293pt too wide) in paragraph at lines 183--184
 \T1/ptm/m/n/10.95 e-cuted in par-al-lel (lines 24-40) be-cause it com-putes in-
 de-pen-dent val-ues \T1/ptm/m/it/10.95 corrs[i].acorrection\T1/ptm/m/n/10.95 , 
 \T1/ptm/m/it/10.95 corrs[i].bcorrection
  []
 
-[21] <fig02.pdf, id=820, 361.35pt x 217.81375pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+<fig02.pdf, id=852, 361.35pt x 217.81375pt>
 File: fig02.pdf Graphic file (type pdf)
  <use fig02.pdf>
-Package pdftex.def Info: fig02.pdf used on input line 172.
+Package pdftex.def Info: fig02.pdf used on input line 197.
 (pdftex.def)             Requested size: 188.80733pt x 113.81102pt.
 
-<fig03.pdf, id=822, 361.35pt x 216.81pt>
+<fig03.pdf, id=854, 361.35pt x 216.81pt>
 File: fig03.pdf Graphic file (type pdf)
  <use fig03.pdf>
-Package pdftex.def Info: fig03.pdf used on input line 185.
+Package pdftex.def Info: fig03.pdf used on input line 210.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<fig04.pdf, id=823, 361.35pt x 216.81pt>
+<fig04.pdf, id=855, 361.35pt x 216.81pt>
 File: fig04.pdf Graphic file (type pdf)
  <use fig04.pdf>
-Package pdftex.def Info: fig04.pdf used on input line 192.
+Package pdftex.def Info: fig04.pdf used on input line 217.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<fig05.pdf, id=824, 361.35pt x 216.81pt>
+<fig05.pdf, id=856, 361.35pt x 216.81pt>
 File: fig05.pdf Graphic file (type pdf)
  <use fig05.pdf>
-Package pdftex.def Info: fig05.pdf used on input line 199.
+Package pdftex.def Info: fig05.pdf used on input line 224.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<fig06.pdf, id=825, 361.35pt x 216.81pt>
+<fig06.pdf, id=857, 361.35pt x 216.81pt>
 File: fig06.pdf Graphic file (type pdf)
  <use fig06.pdf>
-Package pdftex.def Info: fig06.pdf used on input line 206.
+Package pdftex.def Info: fig06.pdf used on input line 231.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
- [22]
-Overfull \hbox (26.22348pt too wide) in paragraph at lines 223--235
+ [24]
+Overfull \hbox (26.22348pt too wide) in paragraph at lines 248--260
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23])
-(./04_DEWE_v2.tex [24] [25] [26 <./fig02.pdf> <./fig03.pdf> <./fig04.pdf> <./fi
-g05.pdf>] [27 <./fig06.pdf>]
+ [25])
+(./04_DEWE_v2.tex [26] [27] [28 <./fig02.pdf> <./fig03.pdf> <./fig04.pdf> <./fi
+g05.pdf>] [29 <./fig06.pdf>]
 Chapter 4
 
 Overfull \hbox (10.63933pt too wide) in paragraph at lines 7--8
@@ -1308,19 +1334,18 @@ Overfull \hbox (10.63933pt too wide) in paragraph at lines 7--8
 eas-ingly formed as work-flows with many precedence-
  []
 
-<montage.pdf, id=1599, 1335.99126pt x 857.2025pt>
 File: montage.pdf Graphic file (type pdf)
- <use montage.pdf>
+<use montage.pdf>
 Package pdftex.def Info: montage.pdf used on input line 14.
 (pdftex.def)             Requested size: 275.97969pt x 199.16672pt.
 
 Underfull \vbox (badness 4120) has occurred while \output is active []
 
- [28
+ [30
 
 
 ]
-<montage_visualization.pdf, id=1606, 2098.84125pt x 863.225pt>
+<montage_visualization.pdf, id=1636, 2098.84125pt x 863.225pt>
 File: montage_visualization.pdf Graphic file (type pdf)
 
 <use montage_visualization.pdf>
@@ -1331,27 +1356,27 @@ Overfull \hbox (9.07628pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
-[29 <./montage.pdf> <./montage_visualization.pdf>]
+[31 <./montage_visualization.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [32]
 
-LaTeX Warning: Reference `v2_sec:provision' on page 31 undefined on input line 
+LaTeX Warning: Reference `v2_sec:provision' on page 33 undefined on input line 
 47.
 
-[31] [32] <dewe_v2_architecture.pdf, id=1654, 562.1pt x 445.665pt>
+[33] [34] <dewe_v2_architecture.pdf, id=1675, 562.1pt x 445.665pt>
 File: dewe_v2_architecture.pdf Graphic file (type pdf)
 
 <use dewe_v2_architecture.pdf>
 Package pdftex.def Info: dewe_v2_architecture.pdf used on input line 75.
 (pdftex.def)             Requested size: 199.16928pt x 157.90956pt.
- [33 <./dewe_v2_architecture.pdf>]
+ [35 <./dewe_v2_architecture.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [37]
 Underfull \hbox (badness 10000) in paragraph at lines 142--142
 []|\T1/ptm/m/n/10.95 Memory
  []
@@ -1389,61 +1414,61 @@ Underfull \hbox (badness 5771) in paragraph at lines 157--157
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-<benchmark_cpu.pdf, id=1692, 361.35pt x 216.81pt>
+ [38]
+<benchmark_cpu.pdf, id=1712, 361.35pt x 216.81pt>
 File: benchmark_cpu.pdf Graphic file (type pdf)
  <use benchmark_cpu.pdf>
 Package pdftex.def Info: benchmark_cpu.pdf used on input line 178.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<benchmark_mem.pdf, id=1693, 361.35pt x 216.81pt>
+<benchmark_mem.pdf, id=1713, 361.35pt x 216.81pt>
 File: benchmark_mem.pdf Graphic file (type pdf)
  <use benchmark_mem.pdf>
 Package pdftex.def Info: benchmark_mem.pdf used on input line 182.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<benchmark_disk.pdf, id=1694, 361.35pt x 216.81pt>
+<benchmark_disk.pdf, id=1714, 361.35pt x 216.81pt>
 File: benchmark_disk.pdf Graphic file (type pdf)
  <use benchmark_disk.pdf>
 Package pdftex.def Info: benchmark_disk.pdf used on input line 186.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-[37] [38 <./benchmark_cpu.pdf> <./benchmark_mem.pdf> <./benchmark_disk.pdf>]
-<compare_threads.pdf, id=2041, 361.35pt x 217.81375pt>
+[39] [40 <./benchmark_cpu.pdf> <./benchmark_mem.pdf> <./benchmark_disk.pdf>]
+<compare_threads.pdf, id=2062, 361.35pt x 217.81375pt>
 File: compare_threads.pdf Graphic file (type pdf)
 
 <use compare_threads.pdf>
 Package pdftex.def Info: compare_threads.pdf used on input line 214.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
- <compare_cpu.pdf, id=2042, 361.35pt x 217.81375pt>
+ <compare_cpu.pdf, id=2063, 361.35pt x 217.81375pt>
 File: compare_cpu.pdf Graphic file (type pdf)
 
 <use compare_cpu.pdf>
 Package pdftex.def Info: compare_cpu.pdf used on input line 218.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<compare_disk_writes.pdf, id=2043, 361.35pt x 217.81375pt>
+<compare_disk_writes.pdf, id=2064, 361.35pt x 217.81375pt>
 File: compare_disk_writes.pdf Graphic file (type pdf)
 
 <use compare_disk_writes.pdf>
 Package pdftex.def Info: compare_disk_writes.pdf used on input line 222.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<multi_run_makespan.pdf, id=2044, 361.35pt x 217.81375pt>
+<multi_run_makespan.pdf, id=2065, 361.35pt x 217.81375pt>
 File: multi_run_makespan.pdf Graphic file (type pdf)
 
 <use multi_run_makespan.pdf>
 Package pdftex.def Info: multi_run_makespan.pdf used on input line 234.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<multi_run_cpu_time.pdf, id=2045, 371.3875pt x 217.81375pt>
+<multi_run_cpu_time.pdf, id=2066, 371.3875pt x 217.81375pt>
 File: multi_run_cpu_time.pdf Graphic file (type pdf)
 
 <use multi_run_cpu_time.pdf>
 Package pdftex.def Info: multi_run_cpu_time.pdf used on input line 238.
 (pdftex.def)             Requested size: 170.71652pt x 100.12573pt.
 
-<multi_run_disk_writes.pdf, id=2046, 361.35pt x 217.81375pt>
+<multi_run_disk_writes.pdf, id=2067, 361.35pt x 217.81375pt>
 File: multi_run_disk_writes.pdf Graphic file (type pdf)
 
 <use multi_run_disk_writes.pdf>
@@ -1452,32 +1477,32 @@ Package pdftex.def Info: multi_run_disk_writes.pdf used on input line 242.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [41]
 
-LaTeX Warning: Text page 40 contains only floats.
+LaTeX Warning: Text page 42 contains only floats.
 
-[40 <./compare_threads.pdf> <./compare_cpu.pdf> <./compare_disk_writes.pdf> <./
+[42 <./compare_threads.pdf> <./compare_cpu.pdf> <./compare_disk_writes.pdf> <./
 multi_run_makespan.pdf> <./multi_run_cpu_time.pdf> <./multi_run_disk_writes.pdf
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-<dewe_v2_submission_intervals.pdf, id=2253, 393.47pt x 216.81pt>
+ [43]
+<dewe_v2_submission_intervals.pdf, id=2273, 393.47pt x 216.81pt>
 File: dewe_v2_submission_intervals.pdf Graphic file (type pdf)
 
 <use dewe_v2_submission_intervals.pdf>
 Package pdftex.def Info: dewe_v2_submission_intervals.pdf used on input line 26
 3.
 (pdftex.def)             Requested size: 241.84842pt x 133.26291pt.
- [42 <./dewe_v2_submission_intervals.pdf>] [43] <dewe_v2_submission_cpu.pdf, id
-=2295, 361.35pt x 216.81pt>
+ [44 <./dewe_v2_submission_intervals.pdf>] [45] <dewe_v2_submission_cpu.pdf, id
+=2315, 361.35pt x 216.81pt>
 File: dewe_v2_submission_cpu.pdf Graphic file (type pdf)
 
 <use dewe_v2_submission_cpu.pdf>
 Package pdftex.def Info: dewe_v2_submission_cpu.pdf used on input line 295.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<dewe_v2_submission_disk_writes.pdf, id=2296, 361.35pt x 216.81pt>
+<dewe_v2_submission_disk_writes.pdf, id=2316, 361.35pt x 216.81pt>
 File: dewe_v2_submission_disk_writes.pdf Graphic file (type pdf)
 
 <use dewe_v2_submission_disk_writes.pdf>
@@ -1485,7 +1510,7 @@ Package pdftex.def Info: dewe_v2_submission_disk_writes.pdf used on input line
 299.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<dewe_v2_submission_disk_reads.pdf, id=2297, 361.35pt x 216.81pt>
+<dewe_v2_submission_disk_reads.pdf, id=2317, 361.35pt x 216.81pt>
 File: dewe_v2_submission_disk_reads.pdf Graphic file (type pdf)
 
 <use dewe_v2_submission_disk_reads.pdf>
@@ -1493,74 +1518,74 @@ Package pdftex.def Info: dewe_v2_submission_disk_reads.pdf used on input line 3
 03.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<10_runs_cpu.pdf, id=2298, 361.35pt x 217.81375pt>
+<10_runs_cpu.pdf, id=2318, 361.35pt x 217.81375pt>
 File: 10_runs_cpu.pdf Graphic file (type pdf)
  <use 10_runs_cpu.pdf>
 Package pdftex.def Info: 10_runs_cpu.pdf used on input line 313.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<10_runs_disk_writes.pdf, id=2299, 361.35pt x 217.81375pt>
+<10_runs_disk_writes.pdf, id=2319, 361.35pt x 217.81375pt>
 File: 10_runs_disk_writes.pdf Graphic file (type pdf)
 
 <use 10_runs_disk_writes.pdf>
 Package pdftex.def Info: 10_runs_disk_writes.pdf used on input line 317.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<10_runs_disk_reads.pdf, id=2300, 361.35pt x 216.81pt>
+<10_runs_disk_reads.pdf, id=2320, 361.35pt x 216.81pt>
 File: 10_runs_disk_reads.pdf Graphic file (type pdf)
 
 <use 10_runs_disk_reads.pdf>
 Package pdftex.def Info: 10_runs_disk_reads.pdf used on input line 321.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
- <2_node_cpu.pdf, id=2301, 361.35pt x 217.81375pt>
+ <2_node_cpu.pdf, id=2321, 361.35pt x 217.81375pt>
 File: 2_node_cpu.pdf Graphic file (type pdf)
 
 <use 2_node_cpu.pdf>
 Package pdftex.def Info: 2_node_cpu.pdf used on input line 337.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
- <2_node_disk_writes.pdf, id=2302, 361.35pt x 217.81375pt>
+ <2_node_disk_writes.pdf, id=2322, 361.35pt x 217.81375pt>
 File: 2_node_disk_writes.pdf Graphic file (type pdf)
 
 <use 2_node_disk_writes.pdf>
 Package pdftex.def Info: 2_node_disk_writes.pdf used on input line 341.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<2_node_disk_reads.pdf, id=2303, 361.35pt x 216.81pt>
+<2_node_disk_reads.pdf, id=2323, 361.35pt x 216.81pt>
 File: 2_node_disk_reads.pdf Graphic file (type pdf)
 
 <use 2_node_disk_reads.pdf>
 Package pdftex.def Info: 2_node_disk_reads.pdf used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
- [44 <./dewe_v2_submission_cpu.pdf> <./dewe_v2_submission_disk_writes.pdf> <./d
+ [46 <./dewe_v2_submission_cpu.pdf> <./dewe_v2_submission_disk_writes.pdf> <./d
 ewe_v2_submission_disk_reads.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 <./10_runs_cpu.pdf> <./10_runs_disk_writes.pdf> <./10_runs_disk_reads.pdf>
+ [47 <./10_runs_cpu.pdf> <./10_runs_disk_writes.pdf> <./10_runs_disk_reads.pdf>
 ]
-<single_node_multi_runs.pdf, id=2502, 361.35pt x 217.81375pt>
+<single_node_multi_runs.pdf, id=2523, 361.35pt x 217.81375pt>
 File: single_node_multi_runs.pdf Graphic file (type pdf)
 
 <use single_node_multi_runs.pdf>
 Package pdftex.def Info: single_node_multi_runs.pdf used on input line 368.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<multi_node_20_runs.pdf, id=2503, 361.35pt x 216.81pt>
+<multi_node_20_runs.pdf, id=2524, 361.35pt x 216.81pt>
 File: multi_node_20_runs.pdf Graphic file (type pdf)
 
 <use multi_node_20_runs.pdf>
 Package pdftex.def Info: multi_node_20_runs.pdf used on input line 372.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<performance_index.pdf, id=2504, 361.35pt x 217.81375pt>
+<performance_index.pdf, id=2525, 361.35pt x 217.81375pt>
 File: performance_index.pdf Graphic file (type pdf)
 
 <use performance_index.pdf>
 Package pdftex.def Info: performance_index.pdf used on input line 376.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
- [46 <./2_node_cpu.pdf> <./2_node_disk_writes.pdf> <./2_node_disk_reads.pdf>]
+ [48 <./2_node_cpu.pdf> <./2_node_disk_writes.pdf> <./2_node_disk_reads.pdf>]
 Underfull \vbox (badness 3601) has occurred while \output is active []
 
- [47 <./single_node_multi_runs.pdf> <./multi_node_20_runs.pdf> <./performance_i
+ [49 <./single_node_multi_runs.pdf> <./multi_node_20_runs.pdf> <./performance_i
 ndex.pdf>]
 Overfull \hbox (12.10413pt too wide) in paragraph at lines 421--421
 []|\T1/ptm/m/n/10.95 Memory
@@ -1604,36 +1629,36 @@ Overfull \hbox (4.06447pt too wide) in paragraph at lines 425--425
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-<large_scale_cpu.pdf, id=2747, 361.35pt x 217.81375pt>
+ [50]
+<large_scale_cpu.pdf, id=2767, 361.35pt x 217.81375pt>
 File: large_scale_cpu.pdf Graphic file (type pdf)
 
 <use large_scale_cpu.pdf>
 Package pdftex.def Info: large_scale_cpu.pdf used on input line 434.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<large_scale_disk_writes.pdf, id=2748, 361.35pt x 217.81375pt>
+<large_scale_disk_writes.pdf, id=2768, 361.35pt x 217.81375pt>
 File: large_scale_disk_writes.pdf Graphic file (type pdf)
 
 <use large_scale_disk_writes.pdf>
 Package pdftex.def Info: large_scale_disk_writes.pdf used on input line 438.
 (pdftex.def)             Requested size: 170.71652pt x 102.90424pt.
 
-<large_scale_disk_reads.pdf, id=2749, 361.35pt x 216.81pt>
+<large_scale_disk_reads.pdf, id=2769, 361.35pt x 216.81pt>
 File: large_scale_disk_reads.pdf Graphic file (type pdf)
 
 <use large_scale_disk_reads.pdf>
 Package pdftex.def Info: large_scale_disk_reads.pdf used on input line 443.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<large_scale_runs.pdf, id=2750, 371.3875pt x 217.81375pt>
+<large_scale_runs.pdf, id=2770, 371.3875pt x 217.81375pt>
 File: large_scale_runs.pdf Graphic file (type pdf)
 
 <use large_scale_runs.pdf>
 Package pdftex.def Info: large_scale_runs.pdf used on input line 454.
 (pdftex.def)             Requested size: 170.71652pt x 100.12573pt.
 
-<large_scale_performance_index.pdf, id=2751, 361.35pt x 216.81pt>
+<large_scale_performance_index.pdf, id=2771, 361.35pt x 216.81pt>
 File: large_scale_performance_index.pdf Graphic file (type pdf)
 
 <use large_scale_performance_index.pdf>
@@ -1641,18 +1666,18 @@ Package pdftex.def Info: large_scale_performance_index.pdf used on input line 4
 58.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
 
-<large_scale_price.pdf, id=2752, 361.35pt x 216.81pt>
+<large_scale_price.pdf, id=2772, 361.35pt x 216.81pt>
 File: large_scale_price.pdf Graphic file (type pdf)
 
 <use large_scale_price.pdf>
 Package pdftex.def Info: large_scale_price.pdf used on input line 462.
 (pdftex.def)             Requested size: 170.71652pt x 102.43002pt.
- [49 <./large_scale_cpu.pdf> <./large_scale_disk_writes.pdf> <./large_scale_dis
-k_reads.pdf>] [50 <./large_scale_runs.pdf> <./large_scale_performance_index.pdf
+ [51 <./large_scale_cpu.pdf> <./large_scale_disk_writes.pdf> <./large_scale_dis
+k_reads.pdf>] [52 <./large_scale_runs.pdf> <./large_scale_performance_index.pdf
 > <./large_scale_price.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [53]
 Underfull \hbox (badness 10000) in paragraph at lines 495--495
 []|\T1/ptm/m/n/10.95 Compute
  []
@@ -1877,9 +1902,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 502--502
 \T1/ptm/m/n/10.95 x3655 file
  []
 
-[52] [53]) (./06_Conclusion.tex [54]
+[54] [55]) (./06_Conclusion.tex [56]
 Chapter 5
-) [55
+) [57
 
 
 ] (./thesisTemplate.bbl
@@ -1887,7 +1912,7 @@ Bibliography
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56
+ [58
 
 
 
@@ -1895,16 +1920,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57])
+ [59])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
 
-[58]
+[60]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./thesisTemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `thesisTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 3A8422469D04C66780DB889E2DFAE9E5;3203.
+(rerunfilecheck)             Checksum: FD933521F3ADFD881148B9394E9EE7DE;3286.
 
 
 LaTeX Warning: There were undefined references.
@@ -1912,10 +1937,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 19532 strings out of 493315
- 318025 string characters out of 6137905
- 431123 words of memory out of 5000000
- 22004 multiletter control sequences out of 15000+600000
+ 19539 strings out of 493315
+ 318112 string characters out of 6137905
+ 431256 words of memory out of 5000000
+ 22007 multiletter control sequences out of 15000+600000
  77425 words of font info for 89 fonts, out of 8000000 for 9000
  1118 hyphenation exceptions out of 8191
  49i,10n,53p,2499b,1256s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1957,10 +1982,10 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on thesisTemplate.pdf (67 pages, 5166611 bytes).
+Output written on thesisTemplate.pdf (69 pages, 5170996 bytes).
 PDF statistics:
- 3122 PDF objects out of 3580 (max. 8388607)
- 2310 compressed objects within 24 object streams
- 266 named destinations out of 1000 (max. 500000)
- 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3142 PDF objects out of 3580 (max. 8388607)
+ 2328 compressed objects within 24 object streams
+ 270 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 
