@@ -15,13 +15,13 @@ A workflow can be represented by a directed acyclic graph (DAG), where the verti
 In this chapter, we present a set of methods to optimize the execution of scientific workflows, with the Montage astronomical mosaic engine running on Amazon EC2 as an example. We use our own DEWE (Distributed Elastic Workflow Execution)\footnote{DEWE including its source code and visualization toolkit used in this study is available from \url{https://bitbucket.org/lleslie/dwf/wiki/Home}.} as a workflow management system. The main contributions of the present work are:
 
 \begin{itemize}
-%	\item We compare the impact of compiler optimization on the performance of the Montage workflow, using both GNU C Compiler (GCC) and Intel C Compiler (ICC).  
 	\item We develop a workflow visualization toolkit to visualize the workflow execution process and resource consumption pattern. We use the workflow visualization toolkit to process the trace files produced by the workflow management system to identify the bottleneck of the Montage workflow.
+	\item We compare the impact of compiler optimization on the performance of the Montage workflow, using both GNU C Compiler (GCC) and Intel C Compiler (ICC).  	
 	\item We use parallelization techniques to optimize the mBgModel module in the Montage workflow, resulting in significant degree of performance gains.
 	\item We compare the impact of different computing cluster configurations on Amazon EC2 on the performance of the Montage workflow, and analyze the root cause for the performance difference. 
 \end{itemize}
 
-The rest of this chapter is organized as follows. Section \ref{v1_sec:visualization} describes the design of the workflow visualization toolkit and its usage. In Section \ref{v1_sec:parallel}, we first discuss the impact of compiler optimization on performance and then use code level parallelization to mitigate the bottleneck. In Section \ref{v1_sec:eval}, we evaluate our optimization approach by comparing different cluster configurations on Amazon EC2. We summarize our conclusions in Section \ref{v1_sec:summary}.
+The rest of this chapter is organized as follows. Section \ref{v1_sec:montage} provides an overview of the Montage workflow. Section \ref{v1_sec:visualization} describes the design of the workflow visualization toolkit and its usage. In Section \ref{v1_sec:parallel}, we discuss various optimization techniques for the Montage workflow, including compiler optimization (using different compiler with different optimization flags), parallelization of key jobs (parallelizing the mBgModel job in the workflow), as well as cluster configurations (using clusters with different EC2 instance types, but keep the hourly cost constant). We summarize our conclusions in Section \ref{v1_sec:summary}.
 
 \section{The Montage Workflow}
 \label{v1_sec:montage}
@@ -74,10 +74,9 @@ In this section, we present a workflow visualization toolkit that visualizes the
 
 
 
-The workflow visualization toolkit takes a workflow execution trace file as the input, and produces a scalable vector graph (SVG) representing the resource consumption status during the whole makespan. In a workflow execution detailed visualization (Figure \ref{fig:detail}), the scalable vector graph includes information about (a) each individual task with task coloring, such as task id, name of the binary, 
-start time, task execution time, data transfer start time and data transfer execution time; and (b) summarized resource consumption information about each worker node and CPU in terms of computation time, communication time, and resource utilization rate. In a resource consumption pattern visualization (Figure \ref{fig:pattern}), the scalable vector graph provides resource consumption rate for both computation and communication resources, as defined by the ratio between the number of concurrently running computation or communication tasks and the number of total CPUs in the computing cluster.
+The workflow visualization toolkit takes a workflow execution trace file as the input, and produces a scalable vector graph (SVG) representing the resource consumption status during the whole makespan. In a workflow execution detailed visualization, the scalable vector graph includes information about (a) each individual task with task coloring, such as task id, name of the binary, start time, task execution time, data transfer start time and data transfer execution time; and (b) summarized resource consumption information about each worker node and CPU in terms of computation time, communication time, and resource utilization rate. In a resource consumption pattern visualization (Figure \ref{fig:pattern}), the scalable vector graph provides resource consumption rate for both computation and communication resources, as defined by the ratio between the number of concurrently running computation or communication tasks and the number of total CPUs in the computing cluster.
 
-The detailed visualization and  resource consumption patterns of a 6.0 degree Montage workflow running on Amazon EC2 are shown in Figures \ref{fig:detail} and \ref{fig:pattern}, respectively. Specifically, the computing cluster includes 4 m3.2xlarge instances, each of which has 8 vCPUs and 30 GB memory. The binaries are compiled with GCC with the -O2 compiler optimization flag. The makespan of the workflow is 1046 seconds, and the runtime of task mBgModel is 344 seconds. 
+The detailed visualization and  resource consumption patterns of a 6.0 degree Montage workflow running on Amazon EC2 are shown in Figures \ref{fig:detail} and \ref{fig:pattern}, respectively. The experiments are carried out on a cluster with 4 EC2 instances in the us-east-1 region. The instance type being used in the experiments is m3.2xlarge \footnote{The M3 product family is the current generation general purpose product family backed by Intel Xeon E5-2670 v2 (Sandy Bridge) processors and SSD storages. The m3.2xlarge instance is the biggest instance type in the M3 product family. Each m3.2xlarge instance has 8 vCPUs, 30 GB memory, and two 80 GB SSD ephemeral storages.} . Specifically, the computing cluster includes 4 m3.2xlarge instances, each of which has 8 vCPUs and 30 GB memory. The binaries are compiled with GCC with the -O2 compiler optimization flag. The makespan of the workflow is 1046 seconds, and the runtime of task mBgModel is 344 seconds. 
 
 
 As shown in Figure  \ref{fig:detail}, and Figure \ref{fig:pattern}, the Montage workflow has a three-stage resource consumption pattern. In the first stage, a large number of mProjectPP, mDiffFit and mBackground jobs are eligible to run in parallel. These mProjectPP, mDiffFit and mBackground jobs are small jobs with very short execution time within the range of a few seconds. However, they consume and produce a large number of intermediate data files. Staging these intermediate data files between worker nodes causes significant communication cost. Considering the large number of such jobs, it is desirable to have more worker nodes to speed up the execution. However, the communication costs increases when the number of worker nodes increases, resulting in clustering performance degradation. In the second stage, a single job mConcatFit is blocking the execution of other jobs, followed by another blocking job mBgModel. The execution time of the second stage is approximately 40\% of the makespan. During this stage, among all the available computing resources only one CPU core is being utilized. When the cluster is larger, more computing resources are being wasted during this stage. In the third stage, a set of mImgTbl jobs run in parallel, followed by a set of mAdd jobs, then a set of mShrink jobs, with an exit job mJPEG to produce the final mosaic image. In this stage, as the workflow progresses towards the exit job mJPGE, the number of jobs eligible to run in parallel gradually decreases. 
@@ -88,13 +87,19 @@ As we can see, the Montage workflow ensemble represents a scheduling dilemma req
 \section{Optimization Steps}
 \label{v1_sec:parallel}
 
-In this section, we study the impact of parallelization techniques on the performance of Montage. We apply standard compiler optimizations and then exploit parallelism with the support of the Parallware technology\footnote{Parallware is the new source-to-source parallelizing compiler developed by the Appentra team  (http://www.appentra.com/products/parallware/).}. 
+In this section, we carry out the following optimization for the Montage workflow:
+
+\begin{itemize}
+	\item Compiler optimization of the whole Montage workflow, using both GNU C Compiler (GCC) and Intel C Compiler (ICC) with different optimization flags.  	
+	\item Parallelization of the mBgModel job, using the automatic parallelization tool available in the latest version of Parallware \footnote{Parallware is the new source-to-source parallelizing compiler developed by the Appentra team  (http://www.appentra.com/products/parallware/).}. 
+	\item Cluster configuration optimization with different computing cluster configurations on Amazon EC2 with the same hourly cost 
+\end{itemize}
 
 
 \subsection{Compiler Optimization}
 \label{sec:compiler}
 
-The Montage workflow uses the GNU C Compiler (GCC) as the default compiler with no compiler optimization flags. To study the impact of compiler optimization on performance, we compare the performance of GCC and the Intel C Compiler (ICC). The compiler optimization flags being used include default (no optimization), -O1, -O2, and -O3. For each compiler and optimization flag combination, we carry out 3 test runs using a computing cluster of four m3.2xlarge instances\footnote{The M3 product family is the current generation general purpose product family backed by Intel Xeon E5-2670 v2 (Sandy Bridge) processors and SSD storages. The m3.2xlarge instance is the biggest instance type in the M3 product family, and each m3.2xlarge instance has 8 vCPUs, 30 GB memory, and two 80 GB SSD ephemeral storages.} in the us-east-1e availability zone, and use the average makespan as the test result. For each test run, we launch new VM instances in Amazon EC2 and setup a fresh computing cluster. These instances are terminated upon completion of a single test run. 
+The Montage workflow uses the GNU C Compiler (GCC) as the default compiler with no compiler optimization flags. To study the impact of compiler optimization on performance, we compare the performance of GCC and the Intel C Compiler (ICC). The compiler optimization flags being used include default (no optimization), -O1, -O2, and -O3. For each compiler and optimization flag combination, we carry out 3 test runs using a computing cluster of four m3.2xlarge instances in the us-east-1e availability zone, and use the average makespan as the test result. For each test run, we launch new VM instances in Amazon EC2 and setup a fresh computing cluster. These instances are terminated upon completion of a single test run. 
 
 \begin{figure}[t!]
 \centering
@@ -111,13 +116,10 @@ Figure \ref{fig:compiler} shows the performance difference between GCC and ICC, 
 \subsection{The Parallelization of Bottleneck Task}
 \label{v1_sec:parallware}
 
-As mBgModel is identified as the bottleneck of Montage in Section \ref{sec:visualization}, we present a cost-effective OpenMP-enabled parallelization strategy of mBgModel. For this purpose we use the technology of Parallware. The resulting OpenMP-enabled parallel mBgModel provides good performance gains at the cost of short development times. 
+As mBgModel is identified as the bottleneck of Montage, we present a cost-effective OpenMP-enabled parallelization strategy of mBgModel. For this purpose we use the automatic paralyzation tool available in the latest version of Parallware. The resulting OpenMP-enabled parallel mBgModel provides good performance gains at the cost of short development times. 
 
-The Figure~\ref{fig:mbgmodel:sequentialcode} shows a pseudocode of the sequential code of the task mBgModel. 
+Below is the pseudocode of the sequential code of the task mBgModel. 
 
-
-\begin{figure}[ht]
-\centering
 \begin{lstlisting}
 struct FitInfo {
   double a, b, c;
@@ -171,23 +173,12 @@ for (t = 0; t < niterations; t++) {
 }
 }
 \end{lstlisting}
-\vspace{-10pt}
-\caption{Pseudocode of the sequential code of the task mBgModel.}
-\vspace{-20pt}
-\label{fig:mbgmodel:sequentialcode}
-\end{figure}
-%
+
 The original source code consists of 1051 source lines of codes, according to the SLOCCount utility. The design of the data structure poses a challenge on detection of parallelism because it consists of a recursive {\em struct FitInfo}, with indirect recursion through the auxiliary {\em struct CorrInfo}. The code processes a set of astronomical images. The pixels of an astronomical image are represented as an array {\em fits[]}, and their neighbours in other images are represented in the array {\em corrs[]} and its field {\em neighbors[]}.
 
 The algorithmic structure of the sequential mBgModel code consists of a main loop {\em for(t)} that computes {\em fits[]} and {\em corrs[]} during a fixed number of iterations {\em niterations} (line 23). In a given iteration, the values of {\em corrs[]} are updated (lines 25-46) by adding the previous value and the value of an expression that depends on {\em fits[]} through the array of {\em neighbors[]}. In addtion, the computation of {\em fits[]} is also updated (lines 48-55) with the new values of {\em corrs[]} computed at the beginning of each iteration. Thus, the main loop computes two mutually dependent variables {\em fits[]} and {\em corrs[]} that prevent parallel execution of  main loop {\em for(t)}.
 
 In the mBgModel code finer-grained parallelism is exploited as follows. The loop {\em for(i)} can be safely executed in parallel (lines 24-40) because it computes independent values {\em corrs[i].acorrection}, {\em corrs[i].bcorrection} and {\em corrs[i].ccorrection} in each iteraion. In similar manner, {\em for(k)} and {\em for(l)} can also be executed in parallel. The only difference is that these loops compute the sum of the values (e.g., {\em corrs[k].a += corrs[k].acorrection}) accross the iterations of {\em for(t)}. As a result, these loops can be parallelized with an OpenMP directive {\em \#pragma omp parallel for}. Finally, the parallelization overhead has been minimized by creating a unique OpenMP parallel region before the main loop {\em for(t)} using {\em \#pragma omp parallel} (line 21). In order to guarantee correctness, appropriate synchronization is added so that the OpenMP threads are implicitly synchronized at the beginning of each {\em for(t)} iteration.
-
-
-\section{Evaluation}
-\label{v1_sec:eval}
-
-In this section, we first evaluate our parallelization technique and present variations of performance across different cluster configurations on Amazon EC2.
 
 To examine the effect of parallelization, we first compile the whole Montage workflow with the -O2 flag. Then we compile the parallelized version of mBgModel with the -O2 flag, and use it to replace the original mBgModel binary. Then we use DEWE to run the 6.0 degree Montage workflow, and compare the results with the results obtained from the unmodified version. DEWE, similar to other workflow management systems, binds individual tasks with CPUs for the convenience of task scheduling. That is, tasks with multi-thread capability are running on a single CPU assigned to the task by the workflow management system. In this study, we modify DEWE's task handler module to remove the task to CPU binding for task mBgModel, allowing task mBgModel to using all of the CPUs available on the worker node. The computing cluster includes 4 m3.2xlarge instances, each of which has 8 vCPUs and 30 GB memory. 
 
@@ -201,6 +192,9 @@ Figure \ref{fig:parallel} shows the impact of parallelization on the performance
 \vspace{-10pt}
 \label{fig:parallel}
 \end{figure}
+
+\subsection{Cluster Configuration}
+\label{v1_sec:cluster}
 
 
 Now we compare the impact of cluster configurations on the performance of Montage workflow. As shown in Table \ref{tbl:cluster}, four different clustering configurations are being tested.  Cluster M3.2X uses the m3.2xlarge instances from the M3 general purpose product family, while clusters C3.2X, C3.4X and C3.8X uses instances from the C3 compute optimized product family. All these clusters have the same number of total vCPUs. The difference lies in the size of the worker node and the number of worker nodes in the cluster.
@@ -267,9 +261,10 @@ Total Cost & 2.24 USD & 1.68 USD & 1.68 USD& 1.68 USD\\ \hline
 In this chapter, we use various techniques to optimize the execution of a 6.0 degree Montage workflow running on Amazon EC2. We find out that 
 
 \begin{itemize}
-	\item Compiler optimization can be used as general approach to optimize the execution of a scientific workflow. Workflow visualization techniques can be used to generate the resource consumption pattern, as well as identify the bottleneck of a workflow. The bottleneck identified can be further optimized with code level parallelization techniques. The results show that parallelism is the primary source of performance gain in modern computing systems.
-
-    \item On Amazon EC2, further makespan reduction can be achieved by using different cluster configurations without impact on cost. Since Montage workflows are also I/O intensive, additional performance gain can be achieved using RAID 0, which improves I/O performance through parallelism of read/write operations.
+	\item Workflow visualization techniques can be used to generate the resource consumption pattern, as well as identify the bottleneck of a workflow. 
+	\item Compiler optimization can be used as general approach to optimize the execution of a scientific workflow. 
+	\item The bottleneck identified can be further optimized with code level parallelization techniques. The results show that parallelism is the primary source of performance gain in modern computing systems.
+	\item On Amazon EC2, further makespan reduction can be achieved by using different cluster configurations without impact on cost. Since Montage workflows are also I/O intensive, additional performance gain can be achieved using RAID 0, which improves I/O performance through parallelism of read/write operations.
 
 \end{itemize}
 
